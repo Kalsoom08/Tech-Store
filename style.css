@@ -3,7 +3,7 @@
   margin: 0;
 }
 body{
-  background-color: #fcf6f6;
+  background-color: #d7ebfd;
 }
 
 /* Nav */
@@ -52,8 +52,8 @@ i{
  justify-content: space-evenly;
 }
 .categories{
-  background-color: #fff;
-  border: 1px solid #d2c8c8;
+  background-color:#ffffff63 ;
+  border: 1px solid #d2c8c87b;
   padding: 15px;
 }
 .categories h2{
@@ -66,7 +66,7 @@ i{
 .categories ul li{
   list-style-type: none;
   padding: 8px 0;
-  
+  padding-left: 20px;
 }
 .categories ul li a{
   text-decoration: none;
@@ -87,6 +87,44 @@ align-items: center;
   font-size:28px;
 }
 
+
+/* Mobiles */
+#mob-heading{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  padding: 10px 20px ;
+  
+}
+.Mobiles{
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14%;
+  justify-content:space-around;
+}
+.Mobiles div{
+ display: grid;
+ justify-content: center;
+ align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff63;
+  border: 1px solid #d2c8c87b;
+  text-align: center;
+  margin: 10px 0;
+}
+.Mobiles div img{
+height: 150px;
+width: 150px;
+border-radius: 5px;
+margin:10px;
+background-color: transparent;
+}
+.Mobiles span p{
+  padding: 3px;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Mobiles span p:first-child{
+  font-weight: bold;
+}
 
 /* Small screens */
 @media(max-width:900px){
@@ -141,6 +179,32 @@ margin-left: -20px;
   .laptop-image img{
     width: 60%;
   }
+
+  /* Mobiles */
+  #mob-heading{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding: 10px 20px ;
+    
+  }
+  .Mobiles{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content:space-around;
+  }
+  .Mobiles div{
+    margin: 10px 0;
+    height: 100%;
+    width:100;
+    border: 10px solid #d7ebfd;
+
+  }
+  .Mobiles div img{
+  height: 90%;
+  width: 90%;
+  
+  }
+
   
 }
 
@@ -159,9 +223,8 @@ margin-left: -20px;
     height: 21px;
   }
   i{
-    
-    padding: 2px;
-    margin-left: -19px;
+     padding: 0px;
+    margin-left: -15px;
   }
   .cart{
 
@@ -184,7 +247,8 @@ margin-left: -20px;
       height: 70px;
     }
     .categories h2{
-    font-size: 8px;
+    font-size: 7px;
+    padding: 1px;
       padding-bottom: 0px;
       margin-bottom: 02px;
     }
@@ -193,11 +257,30 @@ margin-left: -20px;
       padding: 02px 0;
       font-size: 1vh;
     }
+    .laptop-image{
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./Images/back2.jpg);
+      background-size: cover;
+      
+    }
     .laptop-image h2{
       font-size:10px;
     }
     .laptop-image img{
       width: 40%;
     }
+
+    /* Mobiles */
+    #mob-heading{
+      margin-top: 30px;
+      margin-bottom: 0px;
+      padding: 0px 20px ;
+      font-size: 2.5vh;
+    }
+    .Mobiles{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-content:space-around;
+    }
+  
 }
 
